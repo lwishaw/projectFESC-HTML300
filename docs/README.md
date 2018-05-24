@@ -35,7 +35,13 @@ Ex. -
 
 ## Features
 Simple, clean uncluttered look. Redesigned logo. 
+[Google charts](http://developers.google.com/chart/)
 
+[Bar chart](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+Used vertical bar chart for a large display of data of renewable energy production in Florida from 1960-2015. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of renewable production year-by-year.
+
+[Line chart](https://developers.google.com/chart/interactive/docs/gallery/linechart)
+Used line chart for a large display of data of total consumption of electricity sold in Florida from 1960-2016. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of energy consumed year-by-year by the state of Florida.
 <!--
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
