@@ -35,6 +35,8 @@ Ex. -
 
 ## Features
 Simple, clean uncluttered look. Redesigned logo. 
+
+## API documentation
 [Google charts](http://developers.google.com/chart/)
 
 [Bar chart](https://developers.google.com/chart/interactive/docs/gallery/barchart)
