@@ -1,0 +1,174 @@
+body {
+  margin: 4rem auto; }
+
+/* TODO: size images manually so this is not necessary */
+.mainNav a, li {
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  color: #f15a24;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: .25rem; }
+
+.logo {
+  float: left;
+  max-width: 25%;
+  height: auto; }
+
+.container {
+  clear: both; }
+
+.hero-inner {
+  /* Sizing */
+  clear: both;
+  width: 100%;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+h1 {
+  clear: both;
+  font-size: 4em;
+  color: white; }
+
+.moduleOne {
+  clear: both;
+  padding: 0rem 4rem 4rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+  .moduleOne h3 {
+    color: #f15a24;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center; }
+  .moduleOne h4 {
+    clear: both;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center; }
+
+.moduleTwo {
+  background-color: #5a24f1;
+  margin-bottom: 3rem; }
+  .moduleTwo h3 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 1.5rem; }
+  .moduleTwo h4 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    padding-left: 1.5rem;
+    text-align: left;
+    padding-bottom: 3rem; }
+
+.moduleBoth {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3rem; }
+
+.moduleLeft {
+  padding: 0rem 7rem; }
+  .moduleLeft h3 {
+    color: #f15a24;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center; }
+  .moduleLeft h4 {
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center; }
+
+.moduleBoth button, .moduleSmallP button {
+  background-color: #f15a24;
+  color: white; }
+
+.button, .buttonPhoto {
+  padding: 10px 15px;
+  background-color: #f15a24;
+  text-decoration: none;
+  cursor: pointer; }
+
+.button:active {
+  color: #5a24f1; }
+
+.modulePhotos {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3rem; }
+
+.moduleSmallP {
+  width: 25%;
+  text-align: left; }
+  .moduleSmallP img {
+    width: 100%;
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-color: #5a24f1;
+    border-width: .7rem; }
+  .moduleSmallP h3 {
+    color: #999999;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem; }
+  .moduleSmallP h4 {
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; }
+
+.buttonPhoto {
+  margin-bottom: 1rem; }
+
+footer {
+  clear: both;
+  background-color: #f15a24; }
+  footer ul, footer a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem; }
+
+.twitter-share-button, .fb-share-button {
+  padding: 1rem 2rem; }
+
+/*# sourceMappingURL=new-styles.css.map */

@@ -1,0 +1,251 @@
+$default-margin: 4rem auto;
+$accent:#999999;
+$highlight: #5a24f1;
+$brand: #f15a24;
+$black: #000000;
+$text: center;
+
+@mixin brand {
+  background-color: $brand;
+  padding: 1rem;
+}
+
+@mixin sanserif {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem; 
+}
+
+@mixin headline{
+  font-family:'Playfair Display', serif;
+}
+
+@mixin type{
+  font-family: 'Raleway', sans-serif;
+}
+  
+  
+  
+body {
+  margin: $default-margin;
+}
+/* TODO: size images manually so this is not necessary */
+
+.mainNav a, li{
+  float: right;
+  font-family: $text;
+  color: $brand;
+  text-decoration: none;
+  display: inline-flex; 
+  justify-content: space-around;
+  text-align: $text;
+  font-size: 1.1rem;
+  padding: .25rem;
+}
+
+.logo {
+  float: left;
+  height: auto;
+}
+
+
+.container
+{
+  clear: both;
+}
+
+.hero-inner {
+    /* Sizing */
+    clear: both; 
+  width: 100%;
+    height: 100vh;
+  /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $headline; 
+    text-align: $text;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  
+}
+
+h1 {
+  clear: both;  
+  font-size: 4em;
+  color: white;
+}
+
+.moduleOne {
+  clear: both;
+  padding: 0rem 4rem 4rem;
+  font-family: $text;
+  text-align: $text;
+  
+  h3 {
+  color: $brand;
+  font-family: $text;
+  font-size: 1.5rem;
+  text-align: $text;
+  }
+  
+  h4 {
+  clear: both;
+  color: $black;
+  font-family: $headline;
+  font-size: 3rem;
+  text-align: $text;
+  }
+  
+}
+
+
+.moduleTwo {
+background-color: $highlight;
+margin-bottom: 3rem;
+  
+  h3 {
+  color: white;
+  font-family: $text;
+  font-size: 2rem;
+  text-align: left;
+  padding-top: 3rem;
+  padding-left: 1.5rem;  
+}
+  
+  h4 {
+  color: white;
+  font-family: $headline;
+  font-size: 4rem;
+  padding-left: 1.5rem;
+  text-align: left;
+  padding-bottom: 3rem;
+
+}
+  
+  }
+
+
+
+
+
+
+.moduleBoth {
+  font-family: $text;
+  text-align: $text;
+  display: inline-flex; 
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.moduleLeft {
+  padding: 0rem 7rem;
+  
+  h3 {
+  color: $brand;
+  font-family: $text;
+  font-size: 1.5rem;
+  text-align: $text;
+  }
+  
+  h4 {
+  color: $black;
+  font-family: $headline;
+  font-size: 3rem;
+  text-align: $text;
+  }
+
+}
+
+
+
+
+
+
+.moduleBoth button, .moduleSmallP button {
+  background-color: $brand; 
+  color: white;
+}
+
+.button, .buttonPhoto {
+  padding:10px 15px;
+  background-color:$brand;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.button:active {
+  color:$highlight;
+}
+
+.modulePhotos {
+  font-family: $text;
+  text-align: $text;
+  display: inline-flex; 
+  justify-content: space-around;
+  margin-bottom: 3rem;  
+}
+
+
+.moduleSmallP {
+  width: 25%;
+  text-align: left;
+  
+  img {
+  width: 100%;
+  text-align: left;
+  border-bottom-style: solid;
+  border-bottom-color: $highlight;
+  border-width: .7rem;
+  }  
+
+  h3 {
+  color: $accent;
+  @include sanserif;
+  }
+  
+  h4 {
+  color: $black;
+  font-family: $headline;
+  font-size: 2rem;
+  }
+  
+}
+
+
+.buttonPhoto {
+  margin-bottom: 1rem;
+}
+
+#chart_div {
+  padding-bottom: 5rem;
+}
+
+#curve_chart {
+  margin: 3rem;
+}
+
+footer {
+  clear: both;
+  @include brand;
+ 
+  
+  ul, a {
+  @include sanserif;
+    
+  color: white; 
+  text-decoration: none;
+  display: inline-flex; 
+  justify-content: space-around;
+  text-align: $text;
+  padding: 1.5rem 1.5rem;
+  }
+}
+
+
+
+.twitter-share-button, .fb-share-button {
+  padding: 1rem 2rem;
+}

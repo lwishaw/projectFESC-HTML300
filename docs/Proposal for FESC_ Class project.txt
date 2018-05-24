@@ -1,0 +1,76 @@
+State of the current site
+Accessibility
+According to wave.webaim.org web accessibility test - 
+Homepage details -- 
+11 errors: 3 X Missing alternative text, 6x linked images missing alternative text. Why It Matters: Images that are the only thing within a link must have descriptive alternative text. If an image is within a link that contains no text and that image does not provide alternative text, a screen reader has no content to present to the user regarding the function of the link. How to Fix It: Add appropriate alternative text that presents the content of the image and/or the function of the link.
+1x missing form label: Why It Matters: If a form control does not have a properly associated text label, the function or purpose of that form control may not be presented to screen reader users. Form labels also provide visible descriptions and larger clickable targets for form controls. How to Fix It: If a text label for a form control is visible, use the <label> element to associate it with its respective form control. If there is no visible label, either provide an associated label, add a descriptive title attribute to the form control, or reference the label(s) using aria-labelledby. Labels are not required for image, submit, reset, button, or hidden form controls.
+1x empty heading: A heading contains no content. Why It Matters: Some users, especially keyboard and screen reader users, often navigate by heading elements. An empty heading will present no information and may introduce confusion. How to Fix It: Ensure that all headings contain informative content.
+7 alerts: Suspicious link and 4x redundant links including navigational links that go to the same link. Why It Matters: When adjacent links go to the same location (such as a linked product image and an adjacent linked product name that go to the same product page) this results in additional navigation and repetition for keyboard and screen reader users. How to Fix It: If possible, combine the redundant links into one link and remove any redundant text or alternative text (for example, if a product image and product name are in the same link, the image can usually be given alt="").
+
+
+Other things, according to the test: 
+-- Justified text. Large blocks of justified text can negatively impact readability due to varying word/letter spacing and 'rivers of white' that flow through the text. How to fix: Remove full justification from the text. 
+-- PDFS, Excel sheets: PDFs and Excel documents are typically viewed using a separate application, and can thus cause confusion and navigation difficulties.  How to fix: Ensure the Excel spreadsheet/PDF is natively accessible. Additionally, inform the user that the link will open an Excel spreadsheet or PDF. Because Excel spreadsheets and PDFs have limitations in accessibility (particularly for complex content) and require a separate program, HTML content should usually be used in place of or in addition to the Excel spreadsheet or PDF.
+-- Heading levels skipped on advisory board page. 
+-- Other linked images missing alternative text. 
+
+
+Performance
+First test: 4.081 seconds to load on Chrome. 
+2nd test: 5.465 seconds to load on Apple Iphone 8 test. 
+Third test: 4.891seconds to load on IPad 2017. 
+  
+
+
+
+According to a February 2017 article published by Google, “Find Out How You Stack Up to New Industry Benchmarks for Mobile Page Speed,” 53 percent of mobile site visitors leave a page that takes longer than three seconds to load.
+
+
+Image sizes are large, should be compressed. Headings, logo could be compressed. 23/100 static images failed - use a CDN for all static assets. Dynamic content (which is commonly used by WordPress) is one of the biggest causes of slower TTFB. Most pages on the web as we know it are dynamically served. 
+
+
+Mobile friendliness
+According to google's mobile-friendly test, the page is NOT mobile-friendly.
+Four issues: Viewport not set; clickable elements too close together; text too small to read; content wider than screen.
+
+
+Functionality
+Not responsive
+Fix brochure download (does it even exist)
+Create better newsletter sign-up form. No submit button, doesn’t work now. On other pages, it is there but works poorly. 
+Better search bar. 
+
+
+Ease of use
+Not responsive or mobile-friendly. 
+Not visually appealing (color palette, fonts). 
+Needs to follow a grid format. 
+Navigation menu is too much and needs to be narrowed down/edited to fewer tabs/sub folders
+Needs a heavier edit/smaller bites of text
+Improve social media, add to header bar. (This is a social-media age). 
+Improve footer (forms, phone numbers, and email addresses need to be quickly visible). 
+Fix brochure downloads (does it even exist).
+Fix broken newsletter links, subscription to newsletter. 
+Could use better search function.
+
+
+Who are expected users? What do they want to accomplish?
+Academics, higher education, energy supporters, engineers, government aficionados, alternative-energy users, outreach advocates, those interested in technology. 
+Understand Florida’s energy use through collaborative research and development and harness its potential to become a world leader in energy research, education, technology and energy systems analysis, according to its mission statement. 
+
+
+Device support necessary
+Desktop (Chrome, Firefox, IE), mobile (iphone, android, samsung), tablet (ipad, microsoft surface, samsung), windows 7, iOS, Android, Linux
+Recommendations
+Consider a different CMS. While WordPress is the most popular, other options are now available that make better use of built in mobile-friendly design. If WordPress is the desired platform, consider some plug-ins that will help you cache the dynamic pages. If WordPress is continued, there are options here to make it more mobile-friendly (https://developers.google.com/search/mobile-sites/website-software/wordpress)
+Fix responsiveness and make site mobile-friendly (set viewport, use grid to make clickable elements equally spaced; improve text readability; contain content to within screen.)
+Improve visual appeal (uniform use of color palette, Google fonts, use ragged right text for easier reader accessibility.)
+Follow a grid format to improve ease of use and will help improve responsiveness and mobile use. 
+Improve and condense navigation menu. Narrow down/edit to fewer tabs/subfolders. 
+Give a heavier edit/smaller bites of text to each page. 
+Improve social media, add to header bar. (This is a social-media age). 
+Improve footer (forms, phone numbers, and email addresses need to be quickly visible). 
+Fix brochure downloads.
+Fix broken newsletter links, subscription to newsletter. 
+Better search bar.
+Add alt text to images, fix headings, fix redundant links, fix pdfs, excel sheets to improve accessibility.
