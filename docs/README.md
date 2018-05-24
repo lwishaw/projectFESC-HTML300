@@ -45,11 +45,12 @@ Show what the library does as concisely as possible, developers should be able t
 Provide step by step series of examples and explanations about how to get a development env running.
 
 ## APIs
-- Google charts: (https://developers.google.com/chart/)
+- [Google charts](http://developers.google.com/chart/)
 
+- [Bar chart](https://developers.google.com/chart/interactive/docs/gallery/barchart)
 Used vertical bar chart for a large display of data of renewable energy production in Florida from 1960-2015. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of renewable production year-by-year.
 
-(https://developers.google.com/chart/interactive/docs/gallery/linechart)
+- [Line chart](https://developers.google.com/chart/interactive/docs/gallery/linechart)
 Used line chart for a large display of data of total consumption of electricity sold in Florida from 1960-2016. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of energy consumed year-by-year by the state of Florida.
 -->
 
