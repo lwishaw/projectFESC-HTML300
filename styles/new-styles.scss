@@ -1,6 +1,6 @@
 $default-margin: 4rem auto;
 $accent:#999999;
-$highlight: #5a24f1;
+$highlight:#000080;
 $brand: #f15a24;
 $black: #000000;
 $text: center;
@@ -12,70 +12,64 @@ $text: center;
 
 @mixin sanserif {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
 }
 
-@mixin headline{
+@mixin headline {
   font-family:'Playfair Display', serif;
 }
 
-@mixin type{
-  font-family: 'Raleway', sans-serif;
-}
-  
-  
-  
 body {
   margin: $default-margin;
-}
-/* TODO: size images manually so this is not necessary */
 
-.mainNav a, li{
-  float: right;
-  font-family: $text;
-  color: $brand;
-  text-decoration: none;
-  display: inline-flex; 
-  justify-content: space-around;
-  text-align: $text;
-  font-size: 1.1rem;
-  padding: .25rem;
 }
+
+
+
 
 .logo {
   float: left;
   height: auto;
-}
-
-
-.container
-{
+  margin: 0 2rem 2rem 2rem;
   clear: both;
 }
 
-.hero-inner {
-    /* Sizing */
-    clear: both; 
-  width: 100%;
-    height: 100vh;
-  /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $headline; 
-    text-align: $text;
 
-    background-size: contain;
-    background-repeat: no-repeat;
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("images/FESC-sustainability.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
     background-position: center;
-  
-  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-h1 {
-  clear: both;  
-  font-size: 4em;
-  color: white;
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $brand;
+    font-size: 2rem;
+}
+
+
+.responsive {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 .moduleOne {
@@ -83,48 +77,48 @@ h1 {
   padding: 0rem 4rem 4rem;
   font-family: $text;
   text-align: $text;
-  
+
   h3 {
   color: $brand;
   font-family: $text;
   font-size: 1.5rem;
   text-align: $text;
   }
-  
+
   h4 {
   clear: both;
-  color: $black;
-  font-family: $headline;
+  color:$black;
+  @include headline;
   font-size: 3rem;
   text-align: $text;
   }
-  
+
 }
 
 
 .moduleTwo {
 background-color: $highlight;
 margin-bottom: 3rem;
-  
+
   h3 {
   color: white;
   font-family: $text;
   font-size: 2rem;
   text-align: left;
   padding-top: 3rem;
-  padding-left: 1.5rem;  
+  padding-left: 1.5rem;
 }
-  
+
   h4 {
   color: white;
-  font-family: $headline;
+  @include headline;
   font-size: 4rem;
   padding-left: 1.5rem;
   text-align: left;
   padding-bottom: 3rem;
 
 }
-  
+
   }
 
 
@@ -135,24 +129,24 @@ margin-bottom: 3rem;
 .moduleBoth {
   font-family: $text;
   text-align: $text;
-  display: inline-flex; 
+  display: inline-flex;
   justify-content: space-around;
   margin-bottom: 3rem;
 }
 
 .moduleLeft {
   padding: 0rem 7rem;
-  
+
   h3 {
   color: $brand;
   font-family: $text;
   font-size: 1.5rem;
   text-align: $text;
   }
-  
+
   h4 {
   color: $black;
-  font-family: $headline;
+  @include headline;
   font-size: 3rem;
   text-align: $text;
   }
@@ -165,7 +159,7 @@ margin-bottom: 3rem;
 
 
 .moduleBoth button, .moduleSmallP button {
-  background-color: $brand; 
+  background-color: $brand;
   color: white;
 }
 
@@ -183,35 +177,35 @@ margin-bottom: 3rem;
 .modulePhotos {
   font-family: $text;
   text-align: $text;
-  display: inline-flex; 
+  display: inline-flex;
   justify-content: space-around;
-  margin-bottom: 3rem;  
+  margin-bottom: 3rem;
 }
 
 
 .moduleSmallP {
   width: 25%;
   text-align: left;
-  
+
   img {
   width: 100%;
   text-align: left;
   border-bottom-style: solid;
   border-bottom-color: $highlight;
   border-width: .7rem;
-  }  
+  }
 
   h3 {
   color: $accent;
   @include sanserif;
   }
-  
+
   h4 {
   color: $black;
-  font-family: $headline;
+  @include headline;
   font-size: 2rem;
   }
-  
+
 }
 
 
@@ -230,14 +224,14 @@ margin-bottom: 3rem;
 footer {
   clear: both;
   @include brand;
- 
-  
+
+
   ul, a {
   @include sanserif;
-    
-  color: white; 
+
+  color: white;
   text-decoration: none;
-  display: inline-flex; 
+  display: inline-flex;
   justify-content: space-around;
   text-align: $text;
   padding: 1.5rem 1.5rem;
@@ -245,7 +239,29 @@ footer {
 }
 
 
+/*********MEDIA QUERIES******
+Write CSS that uses media queries to change layouts/style based on device attributes. This should complete the styling for the project. 
+*/
+@media (max-width:320px) {
+  h2 { font-size: 1.3rem;}
+  .item { width: 80%;}
+  img { max-width: 60%;
+        padding: 0rem 3rem;}
+  h3, p, .price {
+  padding: 1rem 1rem;
+  background-clip: border-box;}  
+}
 
-.twitter-share-button, .fb-share-button {
-  padding: 1rem 2rem;
+@media (max-width:700px){
+  h1 { font-size: 2rem;}
+  h3 { font-size: 1rem; }
+}
+
+@media (max-width:425px) {
+  .logo { padding: 0; 
+          max-width: 40%; }
+}
+  
+@media (min-width:1200px) {
+  .logo { padding: 1rem 0rem 1rem 24rem;}
 }

@@ -1,146 +1,143 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      
-      <meta charset="utf-8">
-      <!-- facebook tags -->
-      <meta property="og:title" content="Florida Energy Systems Consortium">
-      <meta property="og:description" content="Bringing renewable energy to the world.">
-      <meta property="og:image" content="images/FESC-sustainability.jpg">
-      <meta property="og:url" content="https://lwishaw.github.io/FESCProject/">
-      <meta property="og:type" content="website">
-      <!-- twitter tags -->
-      <meta name="twitter:title" content="Florida Energy Systems Consortium">
-      <meta name="twitter:description" content="Bringing renewable energy to the world.">
-      <meta name="twitter:image" content="images/FESC-sustainability.jpg">
-      <meta name="twitter:card" content="summary_large_image">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
-      
+  <head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
+    <link rel="stylesheet" href="styles/reset.css">
 
-      <title>Florida Energy Systems Consortium</title>
-    </head>
-    <body>
+    <!-- facebook tags -->
+    <meta property="og:title" content="Florida Energy Systems Consortium">
+    <meta property="og:description" content="Bringing renewable energy to the world.">
+    <meta property="og:image" content="images/FESC-sustainability.jpg">
+    <meta property="og:url" content="https://lwishaw.github.io/FESCProject/">
+    <meta property="og:type" content="website">
+    <!-- twitter tags -->
+    <meta name="twitter:title" content="Florida Energy Systems Consortium">
+    <meta name="twitter:description" content="Bringing renewable energy to the world.">
+    <meta name="twitter:image" content="images/FESC-sustainability.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Florida Energy Systems Consortium</title>
+  </head>
+  <body>
+
 <!--      facebook snippet to "share to FB"-->
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
       
-      <header> 
-        <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
-        <nav class="mainNav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="data.html">Data</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="">Outreach</a></li>
-            <li><a href="">Facilities</a></li>
-          </ul>
-        </nav>
-      </header> 
-    
+    <header>
+      <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
+    </header>
 
+    <div>
+     <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+     <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+     <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+     <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+      <span class="button button-toggle"></span>
+    </label>
       
-      
-      
-      <section class="hero">
-        <div class="hero-inner">
-          <img src="images/FESC-sustainability.jpg" alt="energy solutions">
-          <h1>Universities address Florida's energy needs</h1>
-            
-        </div>
-      </section>  
+     <!-- The nav menu -->
+    <nav class="nav">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="research.html">Research</a>
+      <a class="nav-item" href="data.html">Data</a>
+      <a class="nav-item" href="education.html">Education</a>
+    </nav>
+    </div>
         
-      
-      
-      
-
-
+     <div class="hero-image">
+     <img src="images/FESC-sustainability.jpg" alt="energy solutions" class="responsive">
+       <div class="hero-text">
+    <h1>Universities address Florida's energy needs</h1>
+  </div>
+</div>
 
       <section class="moduleOne">
-      <h3>— WHO WE ARE —</h3>
-      <h4>Renewable energy solutions for the world</h4>
+        <h3>— WHO WE ARE —</h3>
+        <h4>Renewable energy solutions for the world</h4>
       <!--Will freshen up copy for better tone as we build out website-->
-      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
-      </section>  
-      
-      
-      <section class="moduleTwo">
-      <h3>— OUR GOAL —</h3>
-      <h4>Become a world leader in energy research, education, technology and energy systems analysis.</h4>
-      
-      
+        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
       </section>
-      
+
+
+      <section class="moduleTwo">
+        <h3>— OUR GOAL —</h3>
+        <h4>Become a world leader in energy research, education, technology and energy systems analysis.</h4>
+
+      </section>
+
+
+<!--Add to vue.js later
+      <section v-for="modules" class="moduleBoth">
+       <div class="moduleLeft">
+        <h3>{{moduleLeft.name}}</h3>
+        <h4>{{moduleLeft.subname}}</h4>
+        <img :src="gator.imgSource" :alt="gator.name">
+        <p>Hobbies include {{moduleLeft.text}}</p>
+      </div>
+
+  </section>
+-->
       <section  class="moduleBoth">
       <div class="moduleLeft">
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="button" href="#">More here</a>  
-      </div>  
+      <a class="button" href="#">More here</a>
+      </div>
       <div class="moduleLeft">
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="button" href="#">More here</a>  
-      </div>      
+      <a class="button" href="#">More here</a>
+      </div>
       </section>
-      
+
       <section  class="modulePhotos">
       <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions"> 
+      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
 
-        
+
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>  
-      </div>  
+      <a class="buttonPhoto" href="#">More here</a>
+      </div>
       <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions"> 
+      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
 
-        
+
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>  
-      </div>  
-      
+      <a class="buttonPhoto" href="#">More here</a>
+      </div>
+
       <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions"> 
+      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
 
-        
+
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>  
-      </div>  
+      <a class="buttonPhoto" href="#">More here</a>
+      </div>
       </section>
-      
-<!--
-      <section class="moduleRight">
-      <h3>FESC Funded Projects</h3>
-      <h4>Research vision</h4>
-      <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>  
-      </section>
--->
-<!--
-      <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
 
-      <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:
-      <br>(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.<br>
-      <br> (b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers. <br> 
-      (c) Provide a state resource for objective energy systems analysis. <br> 
-      (d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</p>
--->
       <script>window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
@@ -158,7 +155,7 @@
         return t;
         }(document, "script", "twitter-wjs"));
       </script>
-  
+
   <footer>
     <a class="logo1" href=""><img src="images/logo1-fesc.jpg" alt="logo1"></a>
     <a class="logo1" href=""><img src="images/logo2-fesc.jpg" alt="logo1"></a>
@@ -173,9 +170,7 @@
     <a class="logo1" href=""><img src="images/logo11-fesc.jpg" alt="logo1"></a>
     <a class="logo1" href=""><img src="images/logo12-fesc.jpg" alt="logo1"></a>
     
-    
-  
-  <ul>
+    <ul>
       <li><a href="">Advisory board</a></li>
       <li><a href="">Contact us</a></li>
       <li><a href="">Resources</a></li>
@@ -183,10 +178,10 @@
     </ul>
     
     <a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text=Thislooksinteresting!">Tweet
-  </a>
+    </a>
     
-  <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>  
+    <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>       
   </footer>
-      
-  </body>    
+
+  </body>
 </html>

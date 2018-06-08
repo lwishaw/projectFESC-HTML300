@@ -3,6 +3,12 @@
     <head>
       
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+      <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
+      <link rel="stylesheet" href="styles/reset.css">
+      
       <!-- facebook tags -->
       <meta property="og:title" content="Florida Energy Systems Consortium">
       <meta property="og:description" content="Bringing renewable energy to the world.">
@@ -14,15 +20,10 @@
       <meta name="twitter:description" content="Bringing renewable energy to the world.">
       <meta name="twitter:image" content="images/FESC-sustainability.jpg">
       <meta name="twitter:card" content="summary_large_image">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+     
       <!--Load the AJAX API-->
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
-      </script>
-      <script src="styles/script.js"></script>
-
-  
-
+      <script src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="styles/chart.js"></script>
 
       <title>Florida Energy Systems Consortium</title>
     </head>
@@ -36,75 +37,68 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
         fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-      
-      <header> 
-        <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
-        <nav class="mainNav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="data.html">Data</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="">Outreach</a></li>
-            <li><a href="">Facilities</a></li>
-          </ul>
-        </nav>
-      </header> 
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
     
+    <header>
+      <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
+    </header>
 
+    <div>
+     <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+     <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+     <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+     <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+      <span class="button button-toggle"></span>
+    </label>
       
+     <!-- The nav menu -->
+    <nav class="nav">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="research.html">Research</a>
+      <a class="nav-item" href="data.html">Data</a>
+      <a class="nav-item" href="education.html">Education</a>
+    </nav>
+    </div>
       
-    
-        
-      
-      
-      
-
-      
-      <section class="moduleOne">
+  <section class="moduleOne">
       <h3>- THE INDUSTRY -</h3>
       <!--Will freshen up copy for better tone as we build out website-->
-      <h4>Headline here</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies tortor eros, sit amet malesuada lacus tincidunt vel. Donec cursus congue velit, sit amet blandit eros tincidunt et. Maecenas tincidunt cursus dolor. Nulla lacinia sapien vitae neque euismod, eget ullamcorper lectus eleifend. Suspendisse est mi, tempus et tortor sit amet, sagittis rhoncus felis. Sed in ultrices erat. Sed dapibus fringilla hendrerit. Ut tristique eget odio non imperdiet. Nulla facilisi. Vestibulum consequat massa interdum quam efficitur, et malesuada velit finibus. Proin nec lacus est. In varius rhoncus augue, eu dictum magna tempor ornare. Integer in scelerisque sem. Proin varius neque ac nisl suscipit, pretium tempor ligula dignissim. Ut fringilla eu ante eget dapibus.</p>
-      </section>  
+      <h4>What the numbers say</h4>
+      <p>Consumption of energy has continued to rise in Florida as production of renewable energy has remained steady in the state.</p>
+   </section>  
       
-      <section>
+   <section>  
+     <h3>- WHAT IS PRODUCED -</h3>
+     <div id="chart_div" style="width:600px; height:500px"></div>
+   </section>
       
-      <div id="chart_div" style="width:600; height:900"></div>
-  
-     </section>
-      
-     <section>
-      
-      <div id="curve_chart" style="width:900; height:600"></div>
-  
-     </section>
+   <section>
+     <h3>- WHAT IS CONSUMED -</h3>
+     <div id="curve_chart" style="width:600px; height:500px"></div>
+   </section>
         
-        
-      
-      
-      
-    
-      
-      
-      <script>window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
+      <!-- //twitter//  -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
 
-        t._e = [];
-        t.ready = function(f) {
-        t._e.push(f);
-        };
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+      };
 
-        return t;
-        }(document, "script", "twitter-wjs"));
-      </script>
+      return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+      
    <footer>
     <a class="logo1" href=""><img src="images/logo1-fesc.jpg" alt="logo1"></a>
     <a class="logo1" href=""><img src="images/logo2-fesc.jpg" alt="logo1"></a>
@@ -119,9 +113,7 @@
     <a class="logo1" href=""><img src="images/logo11-fesc.jpg" alt="logo1"></a>
     <a class="logo1" href=""><img src="images/logo12-fesc.jpg" alt="logo1"></a>
     
-    
-  
-  <ul>
+    <ul>
       <li><a href="">Advisory board</a></li>
       <li><a href="">Contact us</a></li>
       <li><a href="">Resources</a></li>
@@ -129,11 +121,9 @@
     </ul>
     
     <a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text=Thislooksinteresting!">Tweet
-  </a>
+    </a>
     
-  <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>  
-     
-     
+    <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>       
   </footer>
       
   </body>    
