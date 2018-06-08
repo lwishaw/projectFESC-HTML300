@@ -67,7 +67,7 @@ function drawChart(freshData) {
         // Create a new request object
         let request = new XMLHttpRequest()
         // TODO: URL to contact goes here
-        let requestUrl = "http://api.eia.gov/series/?api_key=b5c2e12ecbdd8ee91f18bfec582206ec&series_id=SEDS.TETCB.FL.A"
+        let requestUrl = "https://api.eia.gov/series/?api_key=b5c2e12ecbdd8ee91f18bfec582206ec&series_id=SEDS.TETCB.FL.A"
         // Open a connection
         request.open('GET', requestUrl, true)
         // Callback for when the request completes
