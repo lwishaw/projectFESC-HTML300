@@ -38,6 +38,7 @@ Simple, clean uncluttered look. Redesigned logo.
 
 ## API documentation
 [Google charts](http://developers.google.com/chart/)
+[US Energy Information Adminstration API](https://www.eia.gov/opendata/register.php)
 
 [Bar chart](https://developers.google.com/chart/interactive/docs/gallery/barchart)
 Used vertical bar chart for a large display of data of renewable energy production in Florida from 1960-2015. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of renewable production year-by-year.
@@ -54,11 +55,12 @@ Provide step by step series of examples and explanations about how to get a deve
 
 ## APIs
 - [Google charts](http://developers.google.com/chart/)
+- [US Energy Information Adminstration API](https://www.eia.gov/opendata/register.php)
 
-- [Bar chart](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+- [Bar chart](https://www.eia.gov/opendata/qb.php?category=404 26&sdid=SEDS.REPRB.FL.A)
 Used vertical bar chart for a large display of data of renewable energy production in Florida from 1960-2015. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of renewable production year-by-year.
 
-- [Line chart](https://developers.google.com/chart/interactive/docs/gallery/linechart)
+- [Line chart](https://www.eia.gov/opendata/qb.php?category=40236&sdid= SEDS.TETCB.FL.A)
 Used line chart for a large display of data of total consumption of electricity sold in Florida from 1960-2016. Source: U.S. Energy Information Administration. Chose this chart as it shows the size and scale of energy consumed year-by-year by the state of Florida.
 -->
 
