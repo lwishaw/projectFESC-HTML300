@@ -48,7 +48,7 @@ body {
   text-align: center; }
   .moduleOne h3 {
     color: #f15a24;
-    font-family: center;
+    font-family:'Raleway', sans-serif;
     font-size: 1.5rem;
     text-align: center; }
   .moduleOne h4 {
@@ -63,7 +63,7 @@ body {
   margin-bottom: 3rem; }
   .moduleTwo h3 {
     color: white;
-    font-family: center;
+    font-family:'Raleway', sans-serif;
     font-size: 2rem;
     text-align: left;
     padding-top: 3rem;
@@ -90,7 +90,7 @@ body {
   padding: 0rem 7rem; }
   .moduleLeft h3 {
     color: #f15a24;
-    font-family: center;
+    font-family:'Raleway', sans-serif;
     font-size: 1.5rem;
     text-align: center; }
   .moduleLeft h4 {
@@ -106,11 +106,12 @@ body {
 .button, .buttonPhoto {
   padding: 10px 15px;
   background-color: #f15a24;
+  color: white;
   text-decoration: none;
   cursor: pointer; }
 
 .button:active {
-  color: #000080; }
+  color: #000000; }
 
 .modulePhotos {
   font-family: center;
@@ -124,7 +125,8 @@ body {
 
 .moduleSmallP {
   width: 25%;
-  text-align: left; }
+  text-align: left;
+}
   .moduleSmallP img {
     width: 100%;
     text-align: left;
@@ -132,13 +134,16 @@ body {
     border-bottom-color: #000080;
     border-width: .7rem; }
   .moduleSmallP h3 {
-    color: #999999;
+    color: #f15a24;
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem; }
   .moduleSmallP h4 {
     color: #000000;
     font-family: 'Playfair Display', serif;
     font-size: 2rem; }
+  .moduleSmallP p {
+    padding-bottom: 1rem;
+}
 
 .buttonPhoto {
   margin-bottom: 1rem; }
@@ -147,54 +152,47 @@ body {
   padding-bottom: 5rem; }
 
 #curve_chart {
-  margin: 3rem; }
+  margin: 3rem; 
+  align-content: center}
+
+.share{
+  padding-top: 0.5rem;}
+
+.twitter-share-button {  
+  padding: 0 0.5rem 0 0; 
+}
+
+.univBox {
+  clear: both;
+  margin-bottom: auto;
+}
+  
+.univLogos { 
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1rem 1rem; 
+}
 
 footer {
   clear: both;
   background-color: #f15a24;
   padding: 1rem; }
-  footer ul, footer a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    text-align: center;
-    padding: 1.5rem 1.5rem; }
-
-/*********MEDIA QUERIES******
-Write CSS that uses media queries to change layouts/style based on device attributes. This should complete the styling for the project. 
-*/
-@media (max-width: 320px) {
-  h2 {
-    font-size: 1.3rem; }
-
-  .item {
-    width: 80%; }
-
-  img {
-    max-width: 60%;
-    padding: 0rem 3rem; }
-
-  h3, p, .price {
-    padding: 1rem 1rem;
-    background-clip: border-box; } }
-@media (max-width: 700px) {
-  h1 {
-    font-size: 2rem; }
-
-  h3 {
-    font-size: 1rem; } }
-@media (max-width: 425px) {
-  .logo {
-    padding: 0;
-    max-width: 40%; } }
-@media (min-width: 1200px) {
-  .logo {
-    padding: 1rem 0rem 1rem 24rem; } }
+  
+footer ul, footer a, .copyright, .social {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.5rem 1.5rem; }
 
 /*# sourceMappingURL=new-styles.css.map */

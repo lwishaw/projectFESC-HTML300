@@ -1,44 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-      
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
-      <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
-      <link rel="stylesheet" href="styles/reset.css">
-      
-      <!-- facebook tags -->
-      <meta property="og:title" content="Florida Energy Systems Consortium">
-      <meta property="og:description" content="Bringing renewable energy to the world.">
-      <meta property="og:image" content="images/FESC-sustainability.jpg">
-      <meta property="og:url" content="https://lwishaw.github.io/FESCProject/">
-      <meta property="og:type" content="website">
-      <!-- twitter tags -->
-      <meta name="twitter:title" content="Florida Energy Systems Consortium">
-      <meta name="twitter:description" content="Bringing renewable energy to the world.">
-      <meta name="twitter:image" content="images/FESC-sustainability.jpg">
-      <meta name="twitter:card" content="summary_large_image">
-     
-      <!--Load the AJAX API-->
-      <script src="https://www.gstatic.com/charts/loader.js"></script>
-      <script src="styles/chart.js"></script>
+  <head>
+    <title>Florida Energy Systems Consortium</title>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- facebook tags -->
+    <meta property="og:title" content="Florida Energy Systems Consortium">
+    <meta property="og:description" content="Bringing renewable energy to the world.">
+    <meta property="og:image" content="https://lwishaw.github.io/projectFESC-HTML300/images/FESC-sustainability.jpg" alt="energy solutions">
+    <meta property="og:url" content="https://lwishaw.github.io/projectFESC-HTML300/">
+    <meta property="og:type" content="website">
+    
+    <!-- twitter tags -->
+    <meta name="twitter:title" content="Florida Energy Systems Consortium">
+    <meta name="twitter:description" content="Bringing renewable energy to the world.">
+    <meta name="twitter:image" content="images/FESC-sustainability.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!--    stylesheets-->
+    <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
+    
+    <!--    Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/60711a4189.js"></script>
+    
+   <!--Load the AJAX API-->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/chart.js"></script>
 
-      <title>Florida Energy Systems Consortium</title>
-    </head>
-    <body>
-      
-<!--      facebook snippet to "share to FB"-->
-      <div id="fb-root"></div>
+  </head>
+  
+  <body>
+     <!--      facebook snippet to "share to FB"-->
+    <div id="fb-root"></div>
       <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
       </script>
+    
     
     <header>
       <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
@@ -70,61 +79,38 @@
       <p>Consumption of energy has continued to rise in Florida as production of renewable energy has remained steady in the state.</p>
    </section>  
       
-   <section>  
+   <section class="moduleOne">  
      <h3>- WHAT IS PRODUCED -</h3>
-     <div id="chart_div" style="width:600px; height:500px"></div>
+     <div id="chart_div" style="width:550px; height:550px"></div>
    </section>
       
-   <section>
+   <section class="moduleOne">
      <h3>- WHAT IS CONSUMED -</h3>
-     <div id="curve_chart" style="width:600px; height:500px"></div>
+     <div id="curve_chart" style="width:550px; height:550px"></div>
    </section>
         
-      <!-- //twitter//  -->
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-      t._e.push(f);
-      };
-
-      return t;
-      }(document, "script", "twitter-wjs"));
-    </script>
+   <footer>    
+      <ul>
+        <li><a href="">Advisory board</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500.</a></li> <li><a href="">Telephone: 352-294-2027</a></li>
+      </ul>
       
-   <footer>
-    <a class="logo1" href=""><img src="images/logo1-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo2-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo3-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo4-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo5-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo6-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo7-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo8-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo9-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo10-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo11-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo12-fesc.jpg" alt="logo1"></a>
-    
-    <ul>
-      <li><a href="">Advisory board</a></li>
-      <li><a href="">Contact us</a></li>
-      <li><a href="">Resources</a></li>
-    <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500, Telephone: 352-294-2027</a></li>
-    </ul>
-    
-    <a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text=Thislooksinteresting!">Tweet
-    </a>
-    
-    <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>       
-  </footer>
+      <!--social media -->
+      <section class="social">
+        <h3>— FOLLOW US —</h3>
+        <div>
+          <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </section>
       
-  </body>    
+      <!--copyright-->
+      <section class="copyright">
+      <p>Copyright, 2018</p>
+      </section>
+    </footer>
+                 
+  </body>
 </html>
