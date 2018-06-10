@@ -4,6 +4,7 @@ $transition-duration: 0.5s;
 $transition-delay: 0.05s;
 
 a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
@@ -67,6 +68,7 @@ a {
     // Restoring nav items from "lines" in the menu icon
     .nav-item {
       color: #f15a24;
+      font-family:'Raleway', sans-serif;
       letter-spacing: 0;
       height: 40px;
       line-height: 40px;
@@ -92,17 +94,6 @@ a {
       }
     }
   }
-
-  // Dummy content
-  & ~ .dummy-content {
-    padding-top: 30px;
-
-    &:before {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
 
 /* Toggle button */
 
@@ -166,7 +157,7 @@ a {
   float: right;
   clear: both;
   color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: -6.2px;
   height: 7px;
   line-height: 7px;

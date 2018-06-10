@@ -24,7 +24,10 @@ body {
 
 }
 
-
+a {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
 
 
 .logo {
@@ -73,20 +76,18 @@ body {
 }
 
 .moduleOne {
-  clear: both;
   padding: 0rem 4rem 4rem;
   font-family: $text;
   text-align: $text;
 
   h3 {
   color: $brand;
-  font-family: $text;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
   text-align: $text;
   }
 
   h4 {
-  clear: both;
   color:$black;
   @include headline;
   font-size: 3rem;
@@ -102,7 +103,7 @@ margin-bottom: 3rem;
 
   h3 {
   color: white;
-  font-family: $text;
+  font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   text-align: left;
   padding-top: 3rem;
@@ -127,7 +128,6 @@ margin-bottom: 3rem;
 
 
 .moduleBoth {
-  font-family: $text;
   text-align: $text;
   display: inline-flex;
   justify-content: space-around;
@@ -168,10 +168,6 @@ margin-bottom: 3rem;
   background-color:$brand;
   text-decoration:none;
   cursor:pointer;
-}
-
-.button:active {
-  color:$highlight;
 }
 
 .modulePhotos {
@@ -222,7 +218,7 @@ margin-bottom: 3rem;
 }
 
 footer {
-  clear: both;
+ 
   @include brand;
 
 

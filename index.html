@@ -1,52 +1,55 @@
-<!doctype html>
+<!--This page was created for class project only. -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <title>Florida Energy Systems Consortium</title>
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display,Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
-    <link rel="stylesheet" href="styles/reset.css">
-
+    
     <!-- facebook tags -->
     <meta property="og:title" content="Florida Energy Systems Consortium">
     <meta property="og:description" content="Bringing renewable energy to the world.">
     <meta property="og:image" content="images/FESC-sustainability.jpg">
-    <meta property="og:url" content="https://lwishaw.github.io/FESCProject/">
+    <meta property="og:url" content="https://lwishaw.github.io/projectFESC-HTML300/">
     <meta property="og:type" content="website">
+    
     <!-- twitter tags -->
     <meta name="twitter:title" content="Florida Energy Systems Consortium">
     <meta name="twitter:description" content="Bringing renewable energy to the world.">
     <meta name="twitter:image" content="images/FESC-sustainability.jpg">
     <meta name="twitter:card" content="summary_large_image">
-
-    <title>Florida Energy Systems Consortium</title>
+    
+    <!--    stylesheets-->
+    <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/headertest-newstyles.css">
+    
+    <!--    Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/60711a4189.js"></script>
+    
+    <!--vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/component.js"></script> 
+  
   </head>
+  
   <body>
-
-<!--      facebook snippet to "share to FB"-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-      
+    
     <header>
       <a class="logo" href="index.html"><img src="images/FESC-logo.jpg" alt="logo"></a>
     </header>
 
     <div>
-     <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+     <!-- This checkbox will give us the toggle behavior,it will be hidden, but functional -->
     <input id="toggle" type="checkbox">
      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-     <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+     <!-- This label is tied to the checkbox and it will contain the toggle "buttons" -->
     <label class="toggle-container" for="toggle">
-     <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+     <!-- If menu is open it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
       <span class="button button-toggle"></span>
     </label>
       
@@ -59,85 +62,56 @@
     </nav>
     </div>
         
-     <div class="hero-image">
-     <img src="images/FESC-sustainability.jpg" alt="energy solutions" class="responsive">
-       <div class="hero-text">
-    <h1>Universities address Florida's energy needs</h1>
-  </div>
-</div>
+    <div class="hero-image">
+      <img src="images/FESC-sustainability.jpg" alt="energy solutions" class="responsive">
+      <div class="hero-text">
+       <h1>Universities address Florida's energy needs</h1>
+      </div>
+    </div>
 
-      <section class="moduleOne">
-        <h3>— WHO WE ARE —</h3>
-        <h4>Renewable energy solutions for the world</h4>
+    <section class="moduleOne">
+      <h3>- WHO WE ARE -</h3>
+      <h4>Renewable energy solutions for the world</h4>
       <!--Will freshen up copy for better tone as we build out website-->
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
-      </section>
-
-
-      <section class="moduleTwo">
-        <h3>— OUR GOAL —</h3>
-        <h4>Become a world leader in energy research, education, technology and energy systems analysis.</h4>
-
-      </section>
-
-
-<!--Add to vue.js later
-      <section v-for="modules" class="moduleBoth">
-       <div class="moduleLeft">
-        <h3>{{moduleLeft.name}}</h3>
-        <h4>{{moduleLeft.subname}}</h4>
-        <img :src="gator.imgSource" :alt="gator.name">
-        <p>Hobbies include {{moduleLeft.text}}</p>
+      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
+      <div class="share">
+        <a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text=This%20looks%20interesting!">Tweet
+        </a>
+    
+        <div class="fb-share-button" data-href="https://lwishaw.github.io/projectFESC-HTML300/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flwishaw.github.io%2FprojectFESC-HTML300%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> 
       </div>
+    </section>
 
-  </section>
--->
-      <section  class="moduleBoth">
+
+    <section class="moduleTwo">
+      <h3>— OUR GOAL —</h3>
+      <h4>Become a world leader in energy research, education, technology and energy systems analysis.</h4>
+    </section>  
+
+    <section  class="moduleBoth">
       <div class="moduleLeft">
       <h3>— FESC FUNDED PROJECTS — </h3>
       <h4>Research vision</h4>
       <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
       <a class="button" href="#">More here</a>
       </div>
-      <div class="moduleLeft">
-      <h3>— FESC FUNDED PROJECTS — </h3>
-      <h4>Research vision</h4>
-      <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="button" href="#">More here</a>
+      
+      <!-- vue.js form-->
+      <div class="moduleLeft" id="form">
+
+      <form @submit.prevent="submit">
+      <h3>— MORE NEWS — </h3>
+      <h4>Get the FESC newsletter</h4>  
+      <div class="fieldset">
+        <input class="email" type="email" name="email" placeholder="name@example.com" id="name" required="" v-model="name">
+        <button type="submit" value="submit">Sign up</button>
       </div>
-      </section>
-
-      <section  class="modulePhotos">
-      <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
-
-
-      <h3>— FESC FUNDED PROJECTS — </h3>
-      <h4>Research vision</h4>
-      <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>
-      </div>
-      <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
-
-
-      <h3>— FESC FUNDED PROJECTS — </h3>
-      <h4>Research vision</h4>
-      <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>
-      </div>
-
-      <div class="moduleSmallP">
-      <img src="images/FESC-sustainability.jpg" alt="energy solutions">
-
-
-      <h3>— FESC FUNDED PROJECTS — </h3>
-      <h4>Research vision</h4>
-      <p>Combining expertise at the state universities positions university researchers to address energy systems so we can be a world leader in energy research enabled by a systems approach.</p>
-      <a class="buttonPhoto" href="#">More here</a>
-      </div>
-      </section>
-
+      </form> 
+    </div>   
+    
+    </section>
+        
+      <!--twitter script-->
       <script>window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
@@ -153,35 +127,54 @@
         };
 
         return t;
-        }(document, "script", "twitter-wjs"));
-      </script>
+        }(document, "script", "twitter-wjs"));</script>
+        
+         <!--      facebook snippet to "share to FB"-->
+    <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script> 
+    
+    <div id="app">
+      <section class="moduleTwo">
+          <div class="univBox">
+          <h3>- OUR PARTNER UNIVERSITIES -</h3>
+                <div v-for="logos in universities" class="univLogos">
+                <img :src="logos.imgSource" alt="logos.name">
+            </div>   
+          </div>
+      </section>
+    </div>
 
-  <footer>
-    <a class="logo1" href=""><img src="images/logo1-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo2-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo3-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo4-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo5-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo6-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo7-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo8-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo9-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo10-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo11-fesc.jpg" alt="logo1"></a>
-    <a class="logo1" href=""><img src="images/logo12-fesc.jpg" alt="logo1"></a>
-    
-    <ul>
-      <li><a href="">Advisory board</a></li>
-      <li><a href="">Contact us</a></li>
-      <li><a href="">Resources</a></li>
-    <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500, Telephone: 352-294-2027</a></li>
-    </ul>
-    
-    <a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text=Thislooksinteresting!">Tweet
-    </a>
-    
-    <div class="fb-share-button" data-href="https://x" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Flwishaw%2Fseymours-adventures&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>       
-  </footer>
-
+    <!--footer -->
+    <footer>    
+      <ul>
+        <li><a href="">Advisory board</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500.</a></li> <li><a href="">Telephone: 352-294-2027</a></li>
+      </ul>
+      
+      <!--social media -->
+      <section class="social">
+        <h3>— FOLLOW US —</h3>
+        <div>
+          <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      
+      <!--copyright-->
+      <section class="copyright">
+      <p>Copyright, 2018</p>
+      </section>
+    </footer>
+      
+    <script src="js/index.js"></script> 
+           
   </body>
 </html>
