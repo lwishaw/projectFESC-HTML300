@@ -110,8 +110,46 @@
     </div>   
     
     </section>
-        
-      <!--twitter script-->
+    
+    <!--    vue.js   -->
+    <div id="app">
+      <section class="moduleTwo">
+          <div class="univBox">
+          <h3>- OUR PARTNER UNIVERSITIES -</h3>
+                <div v-for="logos in universities" class="univLogos">
+                <img :src="logos.imgSource" alt="logos.name">
+            </div>   
+          </div>
+      </section>
+    </div>
+    
+    <!--footer -->
+    <footer>    
+      <ul>
+        <li><a href="">Advisory board</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500.</a></li> <li><a href="">Telephone: 352-294-2027</a></li>
+      </ul>
+      
+      <!--social media -->
+      <section class="social">
+        <h3>— FOLLOW US —</h3>
+        <div>
+          <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      
+      <!--copyright-->
+      <section class="copyright">
+      <p>Copyright, 2018</p>
+      </section>
+    </footer>
+      
+    <script src="js/index.js"></script> 
+    
+    <!--twitter script-->
       <script>window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
@@ -138,43 +176,6 @@
     js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script> 
-    
-    <div id="app">
-      <section class="moduleTwo">
-          <div class="univBox">
-          <h3>- OUR PARTNER UNIVERSITIES -</h3>
-                <div v-for="logos in universities" class="univLogos">
-                <img :src="logos.imgSource" alt="logos.name">
-            </div>   
-          </div>
-      </section>
-    </div>
-
-    <!--footer -->
-    <footer>    
-      <ul>
-        <li><a href="">Advisory board</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">272 Grinter Hall, P.O. Box 115500, Gainesville, FL 32611-5500.</a></li> <li><a href="">Telephone: 352-294-2027</a></li>
-      </ul>
-      
-      <!--social media -->
-      <section class="social">
-        <h3>— FOLLOW US —</h3>
-        <div>
-          <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-        </div>
-      </section>
-      
-      <!--copyright-->
-      <section class="copyright">
-      <p>Copyright, 2018</p>
-      </section>
-    </footer>
-      
-    <script src="js/index.js"></script> 
            
   </body>
 </html>
